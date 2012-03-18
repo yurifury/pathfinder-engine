@@ -6,6 +6,7 @@ describe Dice do
     subject { dice }
 
     it { should respond_to(:roll) }
+    it { should respond_to(:roll_many) }
 
     describe "rolls" do
       subject { dice.roll }
