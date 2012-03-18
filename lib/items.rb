@@ -1,7 +1,7 @@
 # has items, carries their bonuses information in some clever way
 # here's the clever way: hash of item names => [bonus, to-what, bonus, to-what]
 # then when something accesses data, can turn name into variable with bonus and to-what
-# into hash key. so 'belt of giant strength' => [2, strength] becomes 
+# into hash key. so 'belt of giant strength' => [2, strength] becomes
 # strength: belt_of_giant_strength=2
 # generate hash dynamically from scraped text, less time to make
 
