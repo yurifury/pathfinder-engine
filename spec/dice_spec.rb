@@ -1,6 +1,7 @@
 require "dice"
 
 describe Dice do
+
   describe "d6" do
     let (:dice) { Dice.new(6) }
     subject { dice }
@@ -26,6 +27,16 @@ describe Dice do
           rolls.uniq.size.should be > 4
         end
       end
+    end
+  end
+
+  describe "d20" do
+    let (:dice) { Dice.new(20) }
+    subject { dice }
+
+    describe "rolling" do
+      subject { dice.roll }
+      it { should be_between(1, 20) }
     end
   end
 end
